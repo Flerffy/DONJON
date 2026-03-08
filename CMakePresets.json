@@ -10,8 +10,16 @@
       "name": "debug",
       "displayName": "Debug",
       "description": "Configure DONJON in Debug mode",
+      "generator": "MinGW Makefiles",
       "binaryDir": "${sourceDir}/build/debug",
+      "environment": {
+        "PATH": "C:/msys64/mingw64/bin;$penv{PATH}",
+        "CMAKE_PREFIX_PATH": "C:/msys64/mingw64"
+      },
       "cacheVariables": {
+        "CMAKE_C_COMPILER": "C:/msys64/mingw64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "C:/msys64/mingw64/bin/g++.exe",
+        "CMAKE_MAKE_PROGRAM": "C:/msys64/mingw64/bin/mingw32-make.exe",
         "CMAKE_BUILD_TYPE": "Debug"
       }
     },
@@ -19,8 +27,16 @@
       "name": "release",
       "displayName": "Release",
       "description": "Configure DONJON in Release mode",
+      "generator": "MinGW Makefiles",
       "binaryDir": "${sourceDir}/build/release",
+      "environment": {
+        "PATH": "C:/msys64/mingw64/bin;$penv{PATH}",
+        "CMAKE_PREFIX_PATH": "C:/msys64/mingw64"
+      },
       "cacheVariables": {
+        "CMAKE_C_COMPILER": "C:/msys64/mingw64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "C:/msys64/mingw64/bin/g++.exe",
+        "CMAKE_MAKE_PROGRAM": "C:/msys64/mingw64/bin/mingw32-make.exe",
         "CMAKE_BUILD_TYPE": "Release"
       }
     }

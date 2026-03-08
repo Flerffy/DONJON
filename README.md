@@ -1,6 +1,6 @@
 # DONJON
 
-Topdown D-Crawler built in C++ with raylib.
+Topdown dungeon crawler roguelite built in C++ with raylib.
 
 ## Current Setup
 
@@ -24,6 +24,36 @@ winget install Kitware.CMake
 cmake -S . -B build
 cmake --build build -j
 ```
+
+## Current Prototype Features
+
+- Procedural dungeon generation (rooms + corridors)
+- Turn-based movement using `WASD` or arrow keys
+- Enemy movement and melee combat
+- XP, level-ups, and scaling difficulty per floor
+- Stairs (`>`) to descend and generate a new floor
+- Permadeath with restart (`R` after death)
+
+## Optional Audio Assets
+
+The game now supports background music + SFX via raylib audio. Place files in `assets/audio/`:
+
+- `bgm.ogg` (looped background music)
+- `sfx_attack.wav`
+- `sfx_hurt.wav`
+- `sfx_gold.wav`
+- `sfx_interact.wav`
+- `sfx_stairs.wav`
+- `sfx_death.wav`
+
+If files are missing, the game runs normally without audio for those channels.
+
+## Controls
+
+- `WASD` / Arrow keys: move
+- Move into an enemy to attack
+- Reach stairs (`>`) to descend
+- `R`: restart after death
 
 ## VS Code Presets Workflow
 
