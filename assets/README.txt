@@ -141,6 +141,9 @@ Expected layout:
 - Solid decorations DO block player and enemy movement/pathing.
 - No more than 5 solids per chamber
 - Hallways cannot have Solids in them
+- Game uses this grid:
+    row 0: [boulder, rock, barrel, pot, logs]
+    row 1: [closedCasket, brokenCasket, openCasket, closedCoffin, brokenCoffin, openCoffin]
 
 Stairs:
 assets/Icons/stairs.png

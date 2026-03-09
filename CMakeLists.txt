@@ -23,7 +23,14 @@ if(NOT raylib_FOUND)
     FetchContent_MakeAvailable(raylib)
 endif()
 
-add_executable(donjon src/main.cpp)
+add_executable(donjon
+    src/main.cpp
+    src/game.cpp
+    src/engine.cpp
+    src/entities.cpp
+    src/data.cpp
+    src/util.cpp
+)
 target_link_libraries(donjon PRIVATE raylib)
 
 if(EXISTS "${CMAKE_SOURCE_DIR}/assets")
